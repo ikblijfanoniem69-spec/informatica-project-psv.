@@ -1,0 +1,247 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpDHeolS_dLS55rDyv3j-tiAPGWi770buc3A1YdTCqZg&s=10");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    scroll-behavior: smooth;
+}
+
+
+/* NAVIGATIE */
+
+nav {
+    background-color: #d00000;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu > a,
+.dropdown > button {
+    color: white;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 22px 18px;
+    cursor: pointer;
+}
+
+.menu > a:hover,
+.dropdown:hover > button {
+    background-color: #a00000;
+}
+
+
+/* DROPDOWN */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    min-width: 210px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 15px;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #eeeeee;
+    color: #d00000;
+}
+
+
+/* MENU VERSCHIJNT BIJ HOVER */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* ONDERDELEN */
+
+.onderdeel {
+    width: 70%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+
+/* HOOFDTITEL */
+
+h1 {
+    color: white;
+    background-color: #d00000;
+    padding: 25px;
+    margin: -25px -25px 25px -25px;
+}
+
+
+/* KOPJES */
+
+h2 {
+    color: #d00000;
+    font-size: 28px;
+}
+
+
+/* TEKST */
+
+p {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+/* WEDSTRIJD */
+
+.wedstrijd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #d00000;
+}
+
+.team {
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team h3 {
+    color: #d00000;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.team span {
+    background-color: #d00000;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.vs {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* INFORMATIE */
+
+.info {
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* NIEUWS */
+
+.nieuws {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-left: 6px solid #d00000;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nieuws h3 {
+    color: #d00000;
+}
+
+
+/* STAND */
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background-color: #d00000;
+    color: white;
+    padding: 14px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+
+/* KNOPPEN */
+
+button {
+    background-color: #d00000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a00000;
+}
